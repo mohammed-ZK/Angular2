@@ -1,12 +1,12 @@
 <header class="header">
   <!-- Logo image -->
   <img src="assets/images/336170.svg" alt="Logo image" class="logo" />
-<!-- 
+  <!-- 
   <!-- Navigation -->
   <!-- <div class="row gap-1">
     <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
     <a routerLink="/about-us" routerLinkActive="active">About</a>
-  </div> --> 
+  </div> -->
 
   <!-- Cart Icon -->
   <!-- <div class="cart-icon" (click)="navigateToCart()">
@@ -39,7 +39,7 @@ display: inline-block;">
 
 <!-- Conditionally display cart component -->
 <div class="d-flex align-items-center">
-  
+
   <div aria-labelledby="navbarDropdownMenuAvatar" style="position: absolute; right: 13px; top: 60px; padding: 10px;"
     [class]="isShowCart? 'dropdown-menu dropdown-menu-end show':'dropdown-menu dropdown-menu-end'">
     <div class="row">
@@ -48,5 +48,6 @@ display: inline-block;">
       </div>
       <div class="col-4 text-end"><i class="fa fa-close p-2 text-danger" (click)="showCart()"></i></div>
     </div>
-<app-cart ></app-cart>
-  </div></div>
+    <app-cart></app-cart>
+  </div>
+</div>

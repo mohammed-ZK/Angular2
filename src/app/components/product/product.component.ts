@@ -12,7 +12,7 @@ import { CartService } from '../../services/cart.service';
   styleUrl: './product.component.scss',
 })
 export class ProductComponent {
-  @Input() product!: Product;
+  @Input() product!: any;
 
   constructor(private cartService: CartService) {}
   @Output() productoutput: EventEmitter<Product> = new EventEmitter<Product>();
